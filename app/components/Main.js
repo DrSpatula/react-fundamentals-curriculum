@@ -4,7 +4,7 @@ var React = require('react'),
 
 var Main = function(props) {
     return (
-        <div>
+        <div style={{width: "100%", height: "92%"}}>
             <Header />
             {props.children}
         </div>

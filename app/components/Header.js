@@ -1,8 +1,15 @@
-var React = require('react');
+var React = require('react'),
+    CityInput = require('../components/CityInput'),
+    styles = require('../styles');
 
 
 var Header = function(props) {
-    return <h1>This is the fancy app header.</h1>
+    return(
+        <div style={styles.header}>
+            <h2 style={{margin: "0"}}>Clever Title</h2>
+            <CityInput flexDirection={{flexDirection: "row"}} />
+        </div>
+    )
 };
 
 
