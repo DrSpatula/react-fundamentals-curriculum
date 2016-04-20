@@ -1,5 +1,5 @@
 var React = require('react'),
-    CityInput = require('../components/CityInput'),
+    CityInputContainer = require('../containers/CityInputContainer'),
     extend = require('extend'),
     styles = require('../styles');
 
@@ -11,7 +11,7 @@ var Home = function(props) {
     return (
         <div style={homeStyles}>
             <h1 style={{color: "#fff", fontSize: "45px"}}>Enter a City and State</h1>
-            <CityInput flexDirection={{flexDirection: "column"}} />
+            <CityInputContainer flexDirection="column" />
         </div>
     )
 };

@@ -15,6 +15,7 @@
   "license": "ISC",
   "homepage": "https://github.com/ReactjsProgram/react-fundamentals-curriculum#readme",
   "dependencies": {
+    "axios": "^0.9.1",
     "extend": "^3.0.0",
     "react": "^15.0.1",
     "react-dom": "^15.0.1",
