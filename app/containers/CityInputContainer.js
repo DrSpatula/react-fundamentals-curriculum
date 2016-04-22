@@ -1,4 +1,5 @@
 var React = require('react'),
+    weather = require('../util/weather-api'),
     CityInput = require('../components/CityInput');
 
 
@@ -23,7 +24,7 @@ var CityInputContainer = React.createClass({
             cityname: ''
         });
 
-        console.log(cityname);
+        weather.getForecastData(cityname);
     },
 
     render: function() {
