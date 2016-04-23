@@ -31,6 +31,10 @@ var styles = {
         background: "rgba(252, 90, 44, 0.89)",
         color: "#fff",
         padding: "5px"
+    },
+
+    weatherIcon: {
+        fontSize: "120px"
     }
 }
 
