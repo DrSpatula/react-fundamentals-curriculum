@@ -4,6 +4,10 @@ var React = require('react'),
 
 
 var CityInputContainer = React.createClass({
+    contextTypes: {
+        router: React.PropTypes.object.isRequired
+    },
+
     getInitialState: function() {
         return {
             cityname: ''
@@ -24,7 +28,9 @@ var CityInputContainer = React.createClass({
             cityname: ''
         });
 
-        weather.getForecastData(cityname);
+        if (cityname !== "") {
+            this.context.router.push('/Forecast/' + cityname);
+        }
     },
 
     render: function() {
